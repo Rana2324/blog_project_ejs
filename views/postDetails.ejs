@@ -1,0 +1,14 @@
+<%- include('partials/header', {title: 'Post Details'}) %>
+
+<div class="container">
+  <a href="/post" class="back-link">Back to Posts</a>
+
+  <article class="post-details">
+    <h1 class="post-details-title"><%= post.title %></h1>
+    <div class="post-details-body">
+      <%= post.body %>
+    </div>
+  </article>
+</div>
+
+<%- include('partials/footer') %>
